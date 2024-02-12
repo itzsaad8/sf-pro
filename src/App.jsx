@@ -4,6 +4,8 @@ import viteLogo from '/vite.svg'
 import './App.css'
 import Navbar from './components/Navbar'
 import Customer from './components/Customer'
+import Dpchange from './components/Dpchange'
+// import User from './components/User'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -12,6 +14,8 @@ function App() {
     <>
      <Navbar/>
      <Customer/>
+     <Dpchange/>
+     {/* <User/> */}
      
     </>
   )

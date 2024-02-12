@@ -4,10 +4,13 @@ import { FiChevronRight } from "react-icons/fi";
 
 import img from '../assets/dppp.jpg'
 import data from '../Data'
+import Qa from './Qa';
+import query from '../qa'
+import { useNavigate } from 'react-router-dom';
 
 
 const Customer = () => {
-    // const [showMore, setShowMore] = useState(false);
+   
     const [first,setFirst] = useState(0);
     const [last,setLast]= useState(9);
 
@@ -19,11 +22,15 @@ const Customer = () => {
         setFirst(0)
         setLast(9)
     }
-    // const itemsToShow = showMore ? data : data.slice({first}, {last});
-  
-    // const handleLoadMoreClick = () => {
-    //   setShowMore(true);
-    // };
+   
+     const navigate = useNavigate();
+
+     const setData = (item) =>{
+
+       navigate('/profile' , { state : { itemData : item } });
+     }
+
+
   return (
     <div className='mx-2 sm:mx-24 my-10'>
 
@@ -44,11 +51,14 @@ const Customer = () => {
             data.slice(first,last).map((item, i)=>(
                 
                 <>
-                <div className=''>
+                <a href="/profile">
 
-                    <ul className='flex items-center justify-between text-center mb-2 shadow-lg p-1 sm:p-3 rounded-lg border border-gray-200 text-[10px] sm:text-base'>
+                
+                <div className='' onClick={()=> setData(item)}>
+
+                    <ul  className='flex items-center justify-between text-center mb-2 shadow-lg p-1 sm:p-3 rounded-lg border border-gray-200 text-[10px] sm:text-base'>
                         
-                        <img  width={55} className='rounded-[50%]' src={img} alt="" />
+                        <img   width={55} className='rounded-[50%]' src={img} alt="" />
                         
                         <li><p className='hidden sm:block font-bold mb-3'>Customer ID</p>
                             {item.customerid}</li>
@@ -73,6 +83,8 @@ const Customer = () => {
                     </ul>
 
                 </div>
+                </a>
+
                 </>
                    
        
@@ -102,7 +114,18 @@ const Customer = () => {
         <button className='bg-indigo-400 text-white rounded-md px-5  py-2 flex items-center gap-3' onClick={prev}><FiChevronLeft />1</button>
         <button className='bg-indigo-400 text-white rounded-md px-5  py-2 flex items-center gap-3' onClick={loadmore}>2<FiChevronRight /></button>
         </div>
+
+
+        
+            
+
+            <Qa />
+            
+        
     </div>
+
+
+
   )
 }
 
