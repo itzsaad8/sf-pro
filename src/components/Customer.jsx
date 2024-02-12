@@ -25,10 +25,18 @@ const Customer = () => {
     //   setShowMore(true);
     // };
   return (
-    <div className='mx-24 my-10'>
+    <div className='mx-2 sm:mx-24 my-10'>
 
 
-
+<ul className='flex sm:hidden  items-center justify-between text-center mb-2 shadow-lg p-1 sm:p-3 rounded-lg border border-gray-200 text-[10px] sm:text-base'>
+                    <li>Dp</li>
+                    <li>Customer Id</li>
+                    <li>Name </li>
+                    <li>Email </li>
+                    <li>Contact no</li>
+                    <li>Location</li>
+                    <li>Profile Details</li>
+                  </ul>
         
         {
             
@@ -37,28 +45,29 @@ const Customer = () => {
                 
                 <>
                 <div className=''>
-                    <ul className='flex justify-between text-center mb-2 shadow-lg p-3 rounded-lg border border-gray-200'>
+
+                    <ul className='flex items-center justify-between text-center mb-2 shadow-lg p-1 sm:p-3 rounded-lg border border-gray-200 text-[10px] sm:text-base'>
                         
                         <img  width={55} className='rounded-[50%]' src={img} alt="" />
                         
-                        <li><p className='font-bold mb-3'>Customer ID</p>
+                        <li><p className='hidden sm:block font-bold mb-3'>Customer ID</p>
                             {item.customerid}</li>
                         
                         <li>
-                        <p className='font-bold mb-3'>Name</p>{item.name}</li>
+                        <p className='hidden sm:block font-bold mb-3'>Name</p>{item.name}</li>
                        
                         <li>
-                        <p className='font-bold mb-3'>Email</p>{item.email}</li>
+                        <p className=' hidden sm:block font-bold mb-3'>Email</p>{item.email}</li>
                        
                         <li>
-                        <p className='font-bold mb-3'>Contact No</p>{item.contact}</li>
+                        <p className='hidden sm:block font-bold mb-3'>Contact No</p>{item.contact}</li>
                         
                         <li>
-                        <p className='font-bold mb-3'>Location</p>{item.location}</li>
+                        <p className=' hidden sm:block font-bold mb-3'>Location</p>{item.location}</li>
                        
                         <li>
-                        <p className='font-bold mb-3'>Profile Details</p>
-                        <button className='bg-indigo-400 text-white rounded-md px-5'>Open</button>
+                        <p className='hidden sm:block font-bold mb-3'>Profile Details</p>
+                        <button className='bg-indigo-400 text-white rounded-md px-2 sm:px-5'>Open</button>
                         </li>
                         
                     </ul>

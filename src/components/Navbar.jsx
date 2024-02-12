@@ -2,8 +2,13 @@ import React, { useState } from 'react'
 import { FiMenu } from "react-icons/fi";
 import { FiX } from "react-icons/fi";
 import { FiFilter } from "react-icons/fi";
+import { RxCross1 } from "react-icons/rx";
+import Login from './Login';
 
 const Navbar = () => {
+
+
+  const [modal,setShowmodal]=useState(false)
 
 
     const [item,SetItem] = useState();
@@ -27,6 +32,8 @@ const Navbar = () => {
     
 
   return (
+    <>
+    
     <div className='mx-6 sm:mx-24 md:mx-32 my-4 sm:my-8'>
       <div className='hidden sm:flex sm:justify-between text-[#96105A] font-semibold text-lg sm:text-2xl'>
         <div className=''>
@@ -61,7 +68,7 @@ const Navbar = () => {
             </div>
 
            
-            <div className='bg-slate-300 border border-gray-400 py-4 px-3'>
+            <div className='bg-slate-300 border border-gray-400 py-5 px-5 fixed'>
             <ul className='cursor-pointer'>
                 <li className='' onClick={itemClick}>Name</li>
                 <li className='' onClick={itemClick}>Email</li>
@@ -85,9 +92,7 @@ const Navbar = () => {
          :null} */}
         {/* filter ends */}
         <div>
-            <ul>
-                <li>Login</li>
-            </ul>
+            <button onClick={()=> setShowmodal(!modal)}>{modal ? <RxCross1  className='items-center text-3xl font-semibold mr-2'/> :'Login' }</button>
         </div>
       </div>
 
@@ -115,9 +120,7 @@ const Navbar = () => {
         </div>
        
         <div>
-            <ul>
-                <li>Login</li>
-            </ul>
+            <button onClick={()=> setShowmodal(!modal)}>{modal ? <RxCross1 /> :'Login' }</button>
         </div>
       </div>
       :
@@ -125,7 +128,16 @@ const Navbar = () => {
 
       {/* ////////////////////////////////// */}
 
+
+      {/* /////// */}
+     
+
     </div>
+    {
+      modal ? 
+      <Login/>:''
+    }
+    </>
   )
 }
 
