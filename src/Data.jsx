@@ -7,7 +7,8 @@ const data = [
         email:"ggg@gmail.com",
         location:"islamabad",
         profile:"open",
-        price:'20'
+        price:'20',
+        role:"admin"
 
 
     },
@@ -19,7 +20,8 @@ const data = [
         email:"hjkg@gmail.com",
         location:"islamabad",
         profile:"open",
-        price:'5'
+        price:'5',
+        role:"user"
 
 
     },
@@ -31,7 +33,8 @@ const data = [
         email:"ali@gmail.com",
         location:"peshawar",
         profile:"open",
-        price:'18'
+        price:'18',
+        role:"user"
 
 
     },
@@ -43,7 +46,8 @@ const data = [
         email:"ggg@gmail.com",
         location:"islamabad",
         profile:"open",
-        price:'15'
+        price:'15',
+        role:"admin"
 
 
     },
@@ -55,7 +59,8 @@ const data = [
         email:"ggg@gmail.com",
         location:"islamabad",
         profile:"open",
-        price:'19'
+        price:'19',
+        role:"user"
 
 
     },
@@ -67,7 +72,8 @@ const data = [
         email:"ggg@gmail.com",
         location:"islamabad",
         profile:"open",
-        price:'6'
+        price:'6',
+        role:"admin"
 
 
     },
@@ -79,7 +85,8 @@ const data = [
         email:"ggg@gmail.com",
         location:"islamabad",
         profile:"open",
-        price:'4'
+        price:'4',
+        role:"user"
 
 
     },
@@ -91,7 +98,8 @@ const data = [
         email:"ggg@gmail.com",
         location:"islamabad",
         profile:"open",
-        price:'9'
+        price:'9',
+        role:"user"
 
 
     },
@@ -103,7 +111,8 @@ const data = [
         email:"ggg@gmail.com",
         location:"islamabad",
         profile:"open",
-        price:'14'
+        price:'14',
+        role:"user"
 
 
     },
@@ -115,7 +124,8 @@ const data = [
         email:"ggg@gmail.com",
         location:"islamabad",
         profile:"open",
-        price:'18'
+        price:'18',
+        role:"user"
 
 
     },
@@ -127,7 +137,8 @@ const data = [
         email:"ggg@gmail.com",
         location:"islamabad",
         profile:"open",
-        price:'3'
+        price:'3',
+        role:"user"
 
 
     },
@@ -139,7 +150,8 @@ const data = [
         email:"ggg@gmail.com",
         location:"islamabad",
         profile:"open",
-        price:'7'
+        price:'7',
+        role:"user"
 
 
     },
@@ -151,7 +163,8 @@ const data = [
         email:"ggg@gmail.com",
         location:"islamabad",
         profile:"open",
-        price:'17'
+        price:'17',
+        role:"user"
 
 
     },
@@ -163,7 +176,8 @@ const data = [
         email:"ggg@gmail.com",
         location:"islamabad",
         profile:"open",
-        price:'10'
+        price:'10',
+        role:"user"
 
 
     },
@@ -175,7 +189,8 @@ const data = [
         email:"ggg@gmail.com",
         location:"islamabad",
         profile:"open",
-        price:'12'
+        price:'12',
+        role:"user"
 
 
     },
@@ -187,7 +202,8 @@ const data = [
         email:"ggg@gmail.com",
         location:"islamabad",
         profile:"open",
-        price:'1'
+        price:'1',
+        role:"user"
 
 
     },
@@ -199,7 +215,8 @@ const data = [
         email:"ggg@gmail.com",
         location:"islamabad",
         profile:"open",
-        price:'20'
+        price:'20',
+        role:"user"
 
 
     },
@@ -211,7 +228,8 @@ const data = [
         email:"ggg@gmail.com",
         location:"islamabad",
         profile:"open",
-        price:'19'
+        price:'19',
+        role:"user"
 
 
     },
@@ -223,7 +241,8 @@ const data = [
         email:"ggg@gmail.com",
         location:"islamabad",
         profile:"open",
-        price:'5'
+        price:'5',
+        role:"admin"
 
 
     },
@@ -235,7 +254,8 @@ const data = [
         email:"ggg@gmail.com",
         location:"islamabad",
         profile:"open",
-        price:'10'
+        price:'10',
+        role:"user"
 
 
     },
@@ -247,7 +267,8 @@ const data = [
         email:"ggg@gmail.com",
         location:"islamabad",
         profile:"open",
-        price:'15'
+        price:'15',
+        role:"user"
 
 
     },

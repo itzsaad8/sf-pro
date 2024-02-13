@@ -5,6 +5,8 @@ import { FiFilter } from "react-icons/fi";
 import { RxCross1 } from "react-icons/rx";
 import Login from './Login';
 
+
+
 const Navbar = () => {
 
 
@@ -34,7 +36,7 @@ const Navbar = () => {
   return (
     <>
     
-    <div className='mx-6 sm:mx-24 md:mx-32 my-4 sm:my-8'>
+    <div className='mx-6 sm:mx-24  my-4 sm:my-8'>
       <div className='hidden sm:flex sm:justify-between text-[#96105A] font-semibold text-lg sm:text-2xl'>
         <div className=''>
             <ul className='flex sm:gap-8 md:gap-20 cursor-pointer'>
@@ -137,6 +139,7 @@ const Navbar = () => {
       modal ? 
       <Login/>:''
     }
+    
     </>
   )
 }

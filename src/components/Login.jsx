@@ -1,6 +1,13 @@
 import React, { useState } from 'react'
+// import 'react-notifications/lib/notifications.css';
+// import { NotificationContainer, NotificationManager } from 'react-notifications';
 
 const Login = () => {
+ 
+
+  // const shownotiation = ()=>{
+  //   NotificationManager.info('Info message');
+  // }
  
 
   return (
@@ -23,7 +30,9 @@ const Login = () => {
           <a className="text-blue-600 hover:text-blue-700 hover:underline hover:underline-offset-4" href="#">Forgot Password?</a>
         </div>
         <div className="text-center md:text-left">
-          <button className="mt-4 bg-indigo-400 hover:bg-blue-700 px-4 py-2 text-white uppercase rounded text-xs tracking-wider" type="submit">Login</button>
+          <button
+          //  onClick={()=>shownotiation}
+          className="mt-4 bg-indigo-400 hover:bg-blue-700 px-4 py-2 text-white uppercase rounded text-xs tracking-wider" type="submit">Login</button>
         </div>
         <div className="mt-4 font-semibold text-sm text-slate-500 text-center md:text-left">
           Don't have an account? <a className="text-red-600 hover:underline hover:underline-offset-4" href="#">Register</a>
@@ -33,6 +42,7 @@ const Login = () => {
             
         </div>
 
+{/* <NotificationContainer/> */}
     </div>
   )
 }
