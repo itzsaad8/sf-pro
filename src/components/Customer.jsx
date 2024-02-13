@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import { FiChevronLeft } from "react-icons/fi";
 import { FiChevronRight } from "react-icons/fi";
+import { AiOutlineRetweet } from "react-icons/ai";
 
 import img from '../assets/dppp.jpg'
 import data from '../Data'
@@ -11,6 +12,9 @@ import { useNavigate } from 'react-router-dom';
 
 const Customer = () => {
    
+
+  const [searchTerm, setSearchTerm] = useState('');
+  const [sortOrder, setSortOrder] = useState('asc');
     const [first,setFirst] = useState(0);
     const [last,setLast]= useState(9);
 
@@ -30,10 +34,53 @@ const Customer = () => {
        navigate('/profile' , { state : { itemData : item } });
      }
 
+     const filteredData = 
+     data
+     .filter((item) =>
+     item.name.includes(searchTerm)
+     
+      )
+      .sort((a, b) => {
+        const priceA = parseFloat(a.price);
+        const priceB = parseFloat(b.price);
+        return sortOrder === 'asc' ? priceA - priceB : priceB - priceA; });
+
+        const toggleSortOrder = () => {
+          setSortOrder(sortOrder === 'asc' ? 'desc' : 'asc');
+        };
+
 
   return (
     <div className='mx-2 sm:mx-24 my-10'>
+      <div className='flex justify-between'>
 
+
+            <input
+                type="text"
+                placeholder="Search by name"
+                value={searchTerm}
+                onChange={(e) => setSearchTerm(e.target.value)}
+                className="mb-4 px-2 py-1 border rounded"
+                />
+                <div className='flex gap-2 items-center'>
+                  <p className='text-lg mb-4'>Price:</p>
+                <button className=' flex items-center gap-1 px-3 py-1 mb-4  border rounded cursor-pointer' onClick={toggleSortOrder}>
+                <AiOutlineRetweet />
+                {sortOrder == 'asc' ? 'high to low' : 'low to high' } 
+                </button>
+
+                </div>
+               
+           {/* <input
+            type='text'
+            placeholder={`${sortOrder == 'asc' ? 'high to low' : 'low to high' }  `}
+            // <AiOutlineRetweet />
+            onClick={toggleSortOrder}
+            readOnly
+            className='px-2 py-1 border rounded cursor-pointer'
+            /> */}
+
+      </div>
 
 <ul className='flex sm:hidden  items-center justify-between text-center mb-2 shadow-lg p-1 sm:p-3 rounded-lg border border-gray-200 text-[10px] sm:text-base'>
                     <li>Dp</li>
@@ -42,13 +89,33 @@ const Customer = () => {
                     <li>Email </li>
                     <li>Contact no</li>
                     <li>Location</li>
+                    <li>Price</li>
                     <li>Profile Details</li>
                   </ul>
+
+
+                  {/* {sortOrder === 'asc' ? (
+            <div className='absolute top-full left-0 mt-1 p-2 bg-white border rounded shadow'>
+              <div onClick={toggleSortOrder} className='cursor-pointer'>
+                Low to High
+              </div>
+              
+            </div>
+          ) : (
+            <div className='absolute top-full left-0 mt-1 p-2 bg-white border rounded shadow'>
+              <div onClick={toggleSortOrder} className='cursor-pointer'>
+                High to Low
+              </div>
+             
+            </div>
+          )} */}
+
+                  
         
         {
             
             
-            data.slice(first,last).map((item, i)=>(
+            filteredData.slice(first,last).map((item, i)=>(
                 
                 <>
                 <a href="/profile">
@@ -74,6 +141,8 @@ const Customer = () => {
                         
                         <li>
                         <p className=' hidden sm:block font-bold mb-3'>Location</p>{item.location}</li>
+                        <li>
+                        <p className=' hidden sm:block font-bold mb-3'>Price</p>$ {item.price} </li>
                        
                         <li>
                         <p className='hidden sm:block font-bold mb-3'>Profile Details</p>

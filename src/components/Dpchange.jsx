@@ -25,8 +25,10 @@ const Dpchange = () => {
         className="hidden"
         id="uploadInput"
       />
+     
       
       <label
+      
         htmlFor="uploadInput"
         className="cursor-pointer bg-blue-500 text-white px-4 py-2 rounded-md mt-4"
       >

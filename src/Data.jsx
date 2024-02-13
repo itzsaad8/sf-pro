@@ -6,7 +6,8 @@ const data = [
         contact:"13243444", 
         email:"ggg@gmail.com",
         location:"islamabad",
-        profile:"open"
+        profile:"open",
+        price:'20'
 
 
     },
@@ -17,7 +18,8 @@ const data = [
         contact:"13243433344", 
         email:"hjkg@gmail.com",
         location:"islamabad",
-        profile:"open"
+        profile:"open",
+        price:'5'
 
 
     },
@@ -28,7 +30,8 @@ const data = [
         contact:"13243444", 
         email:"ali@gmail.com",
         location:"peshawar",
-        profile:"open"
+        profile:"open",
+        price:'18'
 
 
     },
@@ -39,7 +42,8 @@ const data = [
         contact:"13243444", 
         email:"ggg@gmail.com",
         location:"islamabad",
-        profile:"open"
+        profile:"open",
+        price:'15'
 
 
     },
@@ -50,7 +54,8 @@ const data = [
         contact:"13243444", 
         email:"ggg@gmail.com",
         location:"islamabad",
-        profile:"open"
+        profile:"open",
+        price:'19'
 
 
     },
@@ -61,7 +66,8 @@ const data = [
         contact:"13243444", 
         email:"ggg@gmail.com",
         location:"islamabad",
-        profile:"open"
+        profile:"open",
+        price:'6'
 
 
     },
@@ -72,7 +78,8 @@ const data = [
         contact:"13243444", 
         email:"ggg@gmail.com",
         location:"islamabad",
-        profile:"open"
+        profile:"open",
+        price:'4'
 
 
     },
@@ -83,7 +90,8 @@ const data = [
         contact:"13243444", 
         email:"ggg@gmail.com",
         location:"islamabad",
-        profile:"open"
+        profile:"open",
+        price:'9'
 
 
     },
@@ -94,7 +102,8 @@ const data = [
         contact:"13243444", 
         email:"ggg@gmail.com",
         location:"islamabad",
-        profile:"open"
+        profile:"open",
+        price:'14'
 
 
     },
@@ -105,7 +114,8 @@ const data = [
         contact:"13243444", 
         email:"ggg@gmail.com",
         location:"islamabad",
-        profile:"open"
+        profile:"open",
+        price:'18'
 
 
     },
@@ -116,7 +126,8 @@ const data = [
         contact:"13243444", 
         email:"ggg@gmail.com",
         location:"islamabad",
-        profile:"open"
+        profile:"open",
+        price:'3'
 
 
     },
@@ -127,7 +138,8 @@ const data = [
         contact:"13243444", 
         email:"ggg@gmail.com",
         location:"islamabad",
-        profile:"open"
+        profile:"open",
+        price:'7'
 
 
     },
@@ -138,7 +150,8 @@ const data = [
         contact:"13243444", 
         email:"ggg@gmail.com",
         location:"islamabad",
-        profile:"open"
+        profile:"open",
+        price:'17'
 
 
     },
@@ -149,7 +162,8 @@ const data = [
         contact:"13243444", 
         email:"ggg@gmail.com",
         location:"islamabad",
-        profile:"open"
+        profile:"open",
+        price:'10'
 
 
     },
@@ -160,7 +174,8 @@ const data = [
         contact:"13243444", 
         email:"ggg@gmail.com",
         location:"islamabad",
-        profile:"open"
+        profile:"open",
+        price:'12'
 
 
     },
@@ -171,7 +186,8 @@ const data = [
         contact:"13243444", 
         email:"ggg@gmail.com",
         location:"islamabad",
-        profile:"open"
+        profile:"open",
+        price:'1'
 
 
     },
@@ -182,7 +198,8 @@ const data = [
         contact:"13243444", 
         email:"ggg@gmail.com",
         location:"islamabad",
-        profile:"open"
+        profile:"open",
+        price:'20'
 
 
     },
@@ -193,7 +210,8 @@ const data = [
         contact:"13243444", 
         email:"ggg@gmail.com",
         location:"islamabad",
-        profile:"open"
+        profile:"open",
+        price:'19'
 
 
     },
@@ -204,7 +222,8 @@ const data = [
         contact:"13243444", 
         email:"ggg@gmail.com",
         location:"islamabad",
-        profile:"open"
+        profile:"open",
+        price:'5'
 
 
     },
@@ -215,7 +234,8 @@ const data = [
         contact:"13243444", 
         email:"ggg@gmail.com",
         location:"islamabad",
-        profile:"open"
+        profile:"open",
+        price:'10'
 
 
     },
@@ -226,7 +246,8 @@ const data = [
         contact:"13243444", 
         email:"ggg@gmail.com",
         location:"islamabad",
-        profile:"open"
+        profile:"open",
+        price:'15'
 
 
     },
